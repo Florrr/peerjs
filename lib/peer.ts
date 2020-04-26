@@ -283,6 +283,9 @@ export class Peer extends EventEmitter {
 
         break;
       }
+      case ServerMessageType.Custom: // The offer sent to a peer has expired without response.
+        this.emit(PeerEventType.Custom, payload);
+        break;
       default: {
         if (!payload) {
           logger.warn(`You received a malformed message from ${peerId} of type ${type}`);
