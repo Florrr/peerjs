@@ -4,6 +4,26 @@ All notable changes will be documented in this file.
 
 ## vNEXT
 
+...
+
+<a name="1.3.2"></a>
+
+## 1.3.2 (2021-03-11)
+
+- fixed issues #800, #803 in PR #806, thanks @jordanaustin
+- updated devDeps: `typescript` to 4.2
+
+<a name="1.3.1"></a>
+
+## 1.3.1 (2020-07-11)
+
+- fixed: map file resolving
+- removed: @types/webrtc because it contains in ts dom lib.
+
+<a name="1.3.0"></a>
+
+## 1.3.0 (2020-07-03)
+
 - changed: don't close the Connection if `iceConnectionState` changed to `disconnected`
 
 <a name="1.2.0"></a>
